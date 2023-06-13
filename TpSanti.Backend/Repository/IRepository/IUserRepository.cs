@@ -1,6 +1,9 @@
-﻿namespace TpSanti.Backend.Repository.IRepository
+﻿using TpSanti.Backend.Models;
+
+namespace TpSanti.Backend.Repository.IRepository
 {
-    public class IUserRepository
+    public interface IUserRepository
     {
+        public User Login(string username, string password);
     }
 }
